@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    {% load static %}
+    <link type='text/css' rel='stylesheet' href='{% static "bootstrap.min.css" %}' />
+    <link type='text/css' rel='stylesheet' href='{% static "bootstrap-theme.min.css" %}' />
+    <link type='text/css' rel='stylesheet' href='{% static "list.css" %}' />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">아주 간단한 게시판</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="navbar-form navbar-right">
+            <button type="submit" class="btn btn-info">Sign in</button>
+            <button type="submit" class="btn btn-success">Sign up</button>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <table class='table'>
+        <thead>
+          <tr>
+            <th style='width: 5%'> 번호 </th>
+            <th style='width: 10% '> 작성날짜 </th>
+            <th style='width: 10%'> 작성자 </th>
+            <th> 제목 </th>
+
+            <!-- 글 수정과 글 삭제 컬럼을 추가-->
+            <th style='width: 5%'> </th>
+            <th style='width: 5%'> </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td> 1 </td>
+            <td> 2021-12-21 </td>
+            <td> 임종혁 </td>
+            <td> 오늘 수업은 여기까지... </td>
+            <td>
+              <button type="submit" class="btn btn-warning">수정</button>
+            </td>
+            <td>
+              <button type="submit" class="btn btn-danger">삭제</button>
+            </td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td> 2021-12-20 </td>
+            <td> 임종혁 </td>
+            <td> 왜 아무도 안보이죠? </td>
+            <td>
+              <button type="submit" class="btn btn-warning">수정</button>
+            </td>
+            <td>
+              <button type="submit" class="btn btn-danger">삭제</button>
+            </td>
+          </tr>
+          <tr>
+
+          </tr>
+          <tr>
+
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+    <div class="container">
+      <button type="submit" class="btn btn-primary">게시글 작성하기</button>
+    </div>
+  </body>
+</html>
